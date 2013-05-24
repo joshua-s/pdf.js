@@ -3551,6 +3551,16 @@ document.addEventListener('DOMContentLoaded', function webViewerLoad(evt) {
       PDFView.rotatePages(90);
     });
 
+  document.getElementById('errorShowMore').addEventListener('contextmenu',
+    function() {
+      return false;
+    });
+
+  document.getElementById('errorShowLess').addEventListener('contextmenu',
+    function() {
+      return false;
+    });
+    
 //#if (FIREFOX || MOZCENTRAL)
 //PDFView.setTitleUsingUrl(file);
 //PDFView.initPassiveLoading();
